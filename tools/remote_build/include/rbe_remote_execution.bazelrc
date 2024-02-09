@@ -18,7 +18,7 @@
 import %workspace%/tools/remote_build/include/rbe_base_config.bazelrc
 
 # configure backend for remote execution
-build --remote_executor=grpcs://remotebuildexecution.googleapis.com
+build --remote_executor=grpc://ac59f395e6e1e4a50873695810277b2c-1494329185.us-east-1.elb.amazonaws.com:8980
 
 build --spawn_strategy=remote
 build --strategy=Javac=remote
